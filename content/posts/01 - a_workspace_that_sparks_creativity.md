@@ -1,6 +1,6 @@
 # A Workspace that Sparks Creativity
 
-A clean and minimal workspace can help productivity and spark creativity. In this post you will learn about some of psychological reasons behind a nice workspace. We'll also share some really nice screenshots of inspiring workspaces 😉.
+A clean and minimal workspace can help productivity and spark creativity. In this post you will learn about some of psychological reasons behind keeping your workspace nice and clean. We'll also share some really nice screenshots of inspiring workspaces 😉.
 
 ## Clean Workspace
 
