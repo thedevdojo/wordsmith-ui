@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/htmlincludejs"></script>
     <style>[x-cloak]{display:none}</style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css">
+
 </head>
 <body class="h-full min-h-screen antialiased">
 
@@ -47,7 +48,7 @@
                         x-transition:leave="transition ease-in duration-300"
                         x-transition:leave-start="translate-x-0 transform"
                         x-transition:leave-end="translate-x-full transform"
-                        class="absolute right-0 top-0 transform bg-gray-100 transition ease-out duration-300 border-l border-gray-200 min-h-screen container max-w-md z-40 shadow-2xl flex justify-between flex-col">
+                        class="absolute right-0 top-0 transform bg-gray-100 transition ease-out duration-300 border-l border-gray-200 h-screen overflow-scroll container max-w-md z-40 shadow-2xl flex justify-between flex-col">
                         <div>
                             <h3 class="text-base font-medium text-gray-500 mt-4 ml-6 inline-block">Post Settings</h3>
                             <div @click="settings=false" class="absolute right-0 top-0 text-4xl font-thin text-gray-500 cursor-pointer cursor-pointer h-12 w-12 leading-none flex justify-center items-center pt-1 pr-3.5">
@@ -86,6 +87,11 @@
                                             <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"></path>
                                         </svg>
                                     </div>
+                                </div>
+
+                                <div class="flex mb-3 mt-8 items-center px-3 py-1.5 rounded bg-gray-200">
+                                    <input type="checkbox" name="featured" class="form-checkbox peer" wire:model="post.featured">
+                                    <label class="text-gray-500 text-sm font-medium inline-block ml-2 uppercase peer-checked:text-green-500" for="featured">Featured</label>
                                 </div>
 
                                 <div @click="settingsMeta=true" class="px-5 py-4 rounded-lg border mt-8 flex justify-center bg-white hover:bg-blue-50 items-center cursor-pointer open-toggle">

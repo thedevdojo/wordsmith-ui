@@ -1,4 +1,4 @@
-# Inspiring Greatness For Yourself And Others
+# Inspiring Greatness
 
 There is never a right time in your life to do great things. There is only a limited time to live your ideal life, so now is the time to embrace your inner excellence.
 
