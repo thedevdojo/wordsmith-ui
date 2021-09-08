@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wordsmith Posts Dashboard</title>
+    <script src="https://unpkg.com/htmlincludejs"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css">
+</head>
+<body class="h-full min-h-screen antialiased">
+
+    <div class="flex justify-center w-full min-h-screen">
+
+        <include src="../dashboard/sidebar.html"></include>
+
+        <div class="w-full ml-64 bg-gray-100">
+
+            <!-- Main Content -->
+            <div class="relative px-8 py-5">
+                <div class="max-w-4xl">
+                    <div class="flex items-start justify-between">
+                        <h1 class="font-bold text-gray-800">Settings</h1>
+                        <div class="px-4 py-2 text-xs font-bold text-white uppercase bg-green-500 rounded shadow cursor-pointer">New Setting</div>
+                    </div>
+
+                        <div class="flex items-center w-full mt-3 space-x-3">
+                            <input type="text" class="block w-full px-4 py-2 leading-normal bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" />
+                            <input type="text" class="block w-full px-4 py-2 leading-normal bg-white border border-gray-300 rounded-lg appearance-none focus:outline-none focus:shadow-outline focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50" />
+                            <div class="flex items-center justify-center flex-shrink-0 w-10 h-10 text-red-500 bg-red-100 rounded-lg cursor-pointer hover:bg-red-200">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v6a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            <!-- End Main Content -->
+
+        </div>
+    </div>
+    <script src="//unpkg.com/alpinejs" defer></script>
+
+</body>
+
+</html>
