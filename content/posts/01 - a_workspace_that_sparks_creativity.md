@@ -10,7 +10,7 @@ Maintaining a tidy workspace is just as important as the tasks you need to compl
 
 > The future is created by what you do today. Good things happen when you set your priorities straight.
 
-## Inpsiration workspaces
+## Inspiration workspaces
 
 Here are a few inspirational workspaces that can help give you ideas on the workspace you would like to create.
 
