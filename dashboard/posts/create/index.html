@@ -19,12 +19,12 @@
         <div class="w-full ml-64 bg-gray-100" x-data="{ settings: false, settingsMeta: false }">
             <div class="relative flex justify-start">
                 <div class="max-w-4xl min-h-screen bg-white flex-1 px-10 pl-12 py-8 border-r border-l border-gray-200" id="post">
-                    <input name="title" placeholder="Post Title" class="bg-white border border-gray-300 rounded-lg py-2 block w-full appearance-none leading-normal focus:outline-none focus:shadow-outline text-4xl font-bold text-black mb-4 w-full border-none overflow-visible" id="title" value="">
+                    <input name="title" placeholder="Post Title" class="bg-white border border-gray-300 rounded-lg py-2 block w-full appearance-none leading-normal focus:outline-none focus:shadow-outline text-4xl font-bold text-black mb-4 border-none overflow-visible" id="title" value="">
                     <textarea placeholder="body" class="w-full"></textarea>
                 </div>
 
                 <div class="fixed right-0 top-0 flex bg-white border-l border-b border-gray-300 pb-2 pl-5 rounded-bl-lg">
-                    <div class="inline-block text-gray-500 underline cursor-pointer mr-3 uppercase text-sm flex items-center mt-1" id="save-post">Save</div>
+                    <div class="text-gray-500 underline cursor-pointer mr-3 uppercase text-sm flex items-center mt-1" id="save-post">Save</div>
                     <div @click="settings=true" class="group cursor-pointer rounded-full p-2 bg-gray-200 hover:bg-gray-300 mr-3 mt-2">
                         <svg width="20" height="20" class="fill-current text-gray-500 group-hover:text-gray-600" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19.535 8.427l-2.006-.55c-.296-.696-.422-.992-.697-1.71l1.035-1.816a.607.607 0 00-.106-.76L16.41 2.238a.615.615 0 00-.76-.106l-1.817 1.035c-.697-.296-.992-.422-1.71-.697l-.55-2.006A.653.653 0 0010.961 0H9.039c-.296 0-.549.19-.612.465l-.55 2.006c-.696.296-.992.422-1.71.697L4.35 2.133a.607.607 0 00-.76.106L2.238 3.59a.615.615 0 00-.106.76l1.035 1.817c-.296.697-.422.992-.697 1.71l-2.006.55A.653.653 0 000 9.039v1.922c0 .296.19.549.465.612l2.006.55c.296.696.422.992.697 1.71L2.133 15.65a.607.607 0 00.106.76l1.351 1.352a.615.615 0 00.76.106l1.817-1.035c.697.296.992.422 1.71.697l.55 2.006a.653.653 0 00.612.465h1.922c.296 0 .549-.19.612-.465l.55-2.006c.696-.296.992-.422 1.71-.697l1.816 1.035c.254.148.57.106.76-.106l1.352-1.351a.615.615 0 00.106-.76l-1.035-1.817c.296-.697.422-.992.697-1.71l2.006-.55a.653.653 0 00.465-.612V9.039a.653.653 0 00-.465-.612zM10 14a4 4 0 11-.001-7.999A4 4 0 0110 14z"></path>
@@ -51,17 +51,17 @@
                         class="absolute right-0 top-0 transform bg-gray-100 transition ease-out duration-300 border-l border-gray-200 h-screen overflow-scroll container max-w-md z-40 shadow-2xl flex justify-between flex-col">
                         <div>
                             <h3 class="text-base font-medium text-gray-500 mt-4 ml-6 inline-block">Post Settings</h3>
-                            <div @click="settings=false" class="absolute right-0 top-0 text-4xl font-thin text-gray-500 cursor-pointer cursor-pointer h-12 w-12 leading-none flex justify-center items-center pt-1 pr-3.5">
+                            <div @click="settings=false" class="absolute right-0 top-0 text-4xl font-thin text-gray-500 cursor-pointer h-12 w-12 leading-none flex justify-center items-center pt-1 pr-3.5">
                                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                             </div>
 
                             <div class="p-6">
 
                                 <div class="relative cursor-pointer mb-8 h-56 rounded-lg overflow-hidden">
-                                    <label id="image_preview_upload" class="top-0 left-0 w-full h-56 rounded-lg bg-white border border-gray-200 rounded-lg cursor-pointer block flex flex-col justify-center items-center hidden">
+                                    <label id="image_preview_upload" class="top-0 left-0 w-full h-56 bg-white border border-gray-200 rounded-lg cursor-pointer flex flex-col justify-center items-center">
                                         <span class="px-3 py-2 rounded border border-gray-300 bg-white text-xs font-bold text-gray-600">Upload Post Image</span>
                                     </label>
-                                    <div id="image_preview" class=" w-full h-full">
+                                    <div id="image_preview" class="w-full h-full">
                                         <div id="removeImage" class="w-20 h-6 bg-red-500 text-white absolute right-0 top-0 mr-3 mt-3 rounded-full flex justify-center items-center text-xs leading-none font-bold" onclick="hideImagePreview()">× remove</div>
                                         <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-pixel="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="w-full bg-gray-200 rounded-lg h-full" id="image">
                                     </div>
@@ -107,7 +107,7 @@
                             </div>
                         </div>
                         <div class="text-right p-5 flex justify-end" id="delete-post">
-                            <div class="text-red-600 underline text-sm cursor-pointer inline-block flex justify-center items-center" data-slug="test">
+                            <div class="text-red-600 underline text-sm cursor-pointer flex justify-center items-center" data-slug="test">
                                 <svg width="18" height="19" class="fill-current text-red-600" xmlns="http://www.w3.org/2000/svg">
                                     <g>
                                         <path d="M0 6.333c0 .875.733 1.584 1.636 1.584v7.916C1.636 17.583 3.102 19 4.91 19h8.182c1.807 0 3.273-1.418 3.273-3.167V7.917c.903 0 1.636-.71 1.636-1.584V4.75c0-.874-.733-1.583-1.636-1.583H13.09V1.583C13.09.71 12.358 0 11.455 0h-4.91C5.642 0 4.91.709 4.91 1.583v1.584H1.636C.733 3.167 0 3.876 0 4.75v1.583zm14.727 9.5c0 .875-.732 1.584-1.636 1.584H4.909c-.904 0-1.636-.71-1.636-1.584V7.917h11.454v7.916zM6.545 1.583h4.91v1.584h-4.91V1.583zM1.636 4.75h14.728v1.583H1.636V4.75z" fill-rule="nonzero"></path>
